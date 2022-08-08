@@ -1,13 +1,12 @@
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
-const loginErrorMsg = document.getElementById("login-error-msg");
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
-    const username = loginForm.username.value;
+    const email = loginForm.email.value;
     const password = loginForm.password.value;
 
-    if (username === "Admin" && password === "AxalitaobA2021") {
+    if (email === "Admin" && password === "AxalitaobA2021") {
         onclick=(window.location.href = "https://www.axalitaoba.ga/");
     } else {
         loginErrorMsg.style.opacity = 1;
